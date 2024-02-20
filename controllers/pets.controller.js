@@ -32,12 +32,12 @@ const getPetsById = async (req, res) => {
 
 const putPets = async (req, res = response) =>{
     const { id } = req.params;
-    const {_id, nombre, raza, tipo, ...resto } = req.body;
+    const {_id, tipo, ...resto } = req.body;
 
-    if(nombre){
+    /*if(nombre){
         const salt = bcryptjs.genSaltSync();
         resto.nombre = bcryptjs.hashSync(nombre, salt);
-    }
+    }*/
 
     const pets = await Pets.findByIdAndUpdate(id, resto);
 
