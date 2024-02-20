@@ -1,0 +1,100 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api_Verpertina",
+    "dateExported": "2024-02-20T06:58:18.344Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3c8e11af-fd10-437b-8c9e-d28ec5ba845e",
+            "colId": "41d99a17-7153-4d96-abbf-8eba79f52068",
+            "containerId": "",
+            "name": "create_usuario",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-07T03:35:04.703Z",
+            "modified": "2024-02-20T06:55:32.475Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Brandon Gomez89\",\n  \"correo\": \"bgomez-2022285@kinal.edu.gt\",\n  \"password\": \"123456\",\n  \"role\": \"USER_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "51b6367b-a8cd-434f-8748-b680e08b72ed",
+            "colId": "41d99a17-7153-4d96-abbf-8eba79f52068",
+            "containerId": "",
+            "name": "buscar_usuario",
+            "url": "http://localhost:3000/api/usuarios/65c3198a4df59e833d323653",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-07T05:42:46.435Z",
+            "modified": "2024-02-07T06:38:24.689Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "840a492a-fcad-4e1a-b7db-747a9e119550",
+            "colId": "41d99a17-7153-4d96-abbf-8eba79f52068",
+            "containerId": "",
+            "name": "list usuarios",
+            "url": "http://localhost:3000/api/usuarios?desde=1&limite=7",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-07T05:50:21.774Z",
+            "modified": "2024-02-07T16:31:49.436Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "7",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "8db84df6-714f-4de6-b7d4-05ba650870bc",
+            "colId": "41d99a17-7153-4d96-abbf-8eba79f52068",
+            "containerId": "",
+            "name": "delete usuarios",
+            "url": "http://localhost:3000/api/usuarios/65c3198a4df59e833d323653",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-07T16:33:06.117Z",
+            "modified": "2024-02-07T16:37:03.240Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "428c166c-5274-478e-a4a7-d1af812de533",
+            "colId": "41d99a17-7153-4d96-abbf-8eba79f52068",
+            "containerId": "",
+            "name": "update usuario",
+            "url": "http://localhost:3000/api/usuarios/65c30b249190ab2ffc812461",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-07T16:49:11.682Z",
+            "modified": "2024-02-12T02:02:10.410Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Brandon Gomez89\",\n  \"correo\": \"bgomez-2022289@kinal.edu.gt\",\n  \"password\": \"123456\",\n  \"role\": \"USER_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

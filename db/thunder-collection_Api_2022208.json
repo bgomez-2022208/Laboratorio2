@@ -1,0 +1,130 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api_2022208",
+    "dateExported": "2024-02-07T23:22:09.133Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "93d30927-212d-4eab-b199-854a4a7ddce9",
+            "colId": "194d2a31-5ffb-49c3-a6d1-ec891b32b03c",
+            "containerId": "",
+            "name": "create_usuario",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-07T20:51:34.056Z",
+            "modified": "2024-02-07T21:33:30.067Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"nombre\":\"Brandon Gomez6\",\n  \"correo\":\"bgomez-2022216@kinal.edu.gt\",\n  \"password\":\"123456\",\n  \"role\":\"USER_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f1db1b18-3d82-439b-a146-3740ea9b4c2b",
+            "colId": "194d2a31-5ffb-49c3-a6d1-ec891b32b03c",
+            "containerId": "",
+            "name": "buscar_usuario",
+            "url": "http://localhost:3000/api/usuarios/65c3f52dec192c2079640bb9",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-07T21:26:40.977Z",
+            "modified": "2024-02-07T21:27:14.507Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9d68d653-c091-4134-b2f0-4b5a49c9bdc5",
+            "colId": "194d2a31-5ffb-49c3-a6d1-ec891b32b03c",
+            "containerId": "",
+            "name": "list_usuario",
+            "url": "http://localhost:3000/api/usuarios/?desde=4&limite=6",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-07T21:27:32.618Z",
+            "modified": "2024-02-07T21:31:32.288Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "4",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "6",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "902ac3ee-9125-487f-ab22-93ec50f52a1c",
+            "colId": "194d2a31-5ffb-49c3-a6d1-ec891b32b03c",
+            "containerId": "",
+            "name": "delete_usuario",
+            "url": "http://localhost:3000/api/usuarios/65c3f700fc8a28b78ef864ec",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-07T21:32:13.734Z",
+            "modified": "2024-02-07T21:33:56.767Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b19fa5c1-45c0-4fe9-a2b4-f946e5359ad1",
+            "colId": "194d2a31-5ffb-49c3-a6d1-ec891b32b03c",
+            "containerId": "",
+            "name": "update usuario",
+            "url": "http://localhost:3000/api/usuarios/65c3f700fc8a28b78ef864ec",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-07T21:35:00.516Z",
+            "modified": "2024-02-07T21:36:53.862Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Brandon Gomez67\",\n  \"correo\":\"bgomez-2022225@kinal.edu.gt\",\n  \"password\":\"123456\",\n  \"role\":\"USER_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5fe74d40-07eb-4e00-91da-1673cc04cf7c",
+            "colId": "194d2a31-5ffb-49c3-a6d1-ec891b32b03c",
+            "containerId": "",
+            "name": "create pets",
+            "url": "http://localhost:3000/api/pets",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-07T22:13:14.874Z",
+            "modified": "2024-02-07T23:15:31.860Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"pansito\",\n  \"raza\": \"Nose\",\n  \"tipo\": \"Gato\",\n  \"dueño\": \"Juan vazques\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api_Pets",
+    "dateExported": "2024-02-20T07:03:43.990Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "83680af4-9cd1-4e7b-b659-eb53469bbcaa",
+            "colId": "8abf37fc-65af-45e5-88ff-04532441b9c2",
+            "containerId": "",
+            "name": "create pets",
+            "url": "http://localhost:3000/api/pets",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-11T23:13:24.692Z",
+            "modified": "2024-02-11T23:54:48.907Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Brandon\",\n  \"raza\": \"aleman\",\n  \"tipo\": \"dsdasds\",\n  \"dueño\": \"Cris\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "708eb133-3bb3-4fee-af2a-215bb401d64b",
+            "colId": "8abf37fc-65af-45e5-88ff-04532441b9c2",
+            "containerId": "",
+            "name": "buscar pets",
+            "url": "http://localhost:3000/api/pets/65c968340c15a32e4526de76",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-12T01:23:34.248Z",
+            "modified": "2024-02-12T01:24:16.170Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e0dc9d6a-b44b-41a4-98be-bf35b498bd3d",
+            "colId": "8abf37fc-65af-45e5-88ff-04532441b9c2",
+            "containerId": "",
+            "name": "listar pets",
+            "url": "http://localhost:3000/api/pets?desde=1&limite=3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-12T01:24:54.055Z",
+            "modified": "2024-02-12T01:28:42.271Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "24f5668c-b085-400b-98d8-2aa4cafc7f59",
+            "colId": "8abf37fc-65af-45e5-88ff-04532441b9c2",
+            "containerId": "",
+            "name": "update pets",
+            "url": "http://localhost:3000/api/pets/65c968340c15a32e4526de76",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-12T01:58:15.623Z",
+            "modified": "2024-02-12T02:02:42.506Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Brandon\",\n  \"raza\": \"aleman\",\n  \"tipo\": \"dsdasds\",\n  \"dueño\": \"Cris\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5798b50-856c-427f-b1c3-5d2555ef7184",
+            "colId": "8abf37fc-65af-45e5-88ff-04532441b9c2",
+            "containerId": "",
+            "name": "delete pets",
+            "url": "http://localhost:3000/api/pets/65c968340c15a32e4526de76",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-12T02:03:16.318Z",
+            "modified": "2024-02-12T02:03:50.132Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
